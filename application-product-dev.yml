@@ -4,10 +4,10 @@ spring:
   application:
   name: AIGOU-PRODUCT #服务名称
   datasource:
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql:///aigou-product?serverTimezone=GMT%2B8
+  driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql:///aigou-product
   username: root
-  password: root
+  password: 940915
 #配置mapperxml文件的位置
 mybatis-plus:
   mapper-locations: classpath*:cn/itsource/aigou/mapper/*Mapper.xml
