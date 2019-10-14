@@ -10,6 +10,6 @@ spring:
     password: 940915
 #配置mapperxml文件的位置
 mybatis-plus:
-  mapper-locations: classpath*:cn/itsource/aigou/mapper/*Mapper.xml
+  mapper-locations: classpath*:cn/itsource/ibuy/mapper/*Mapper.xml
 
 
