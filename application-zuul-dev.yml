@@ -5,10 +5,29 @@ spring:
   application:
     name: IBUY-ZUUL
 
+
 zuul:
   ignoredServices: '*' #只能通过路由访问，不能使用服务名访问
   routes:
     plat:
       serviceId: IBUY-PLAT
       path: /plat/**
+    product:
+      serviceId: IBUY-PRODUCT
+      path: /product/**
+    common:
+      serviceId: IBUY-COMMON
+      path: /common/**
   prefix: /services
+#zuul超时时间的设置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000
+ribbon:
+  ConnectTimeout: 6000
+  ReadTimeout: 6000
+
