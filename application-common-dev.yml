@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: IBUY-COMMON
+
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300
